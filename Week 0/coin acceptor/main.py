@@ -6,6 +6,7 @@ def displayOptions() -> None:
     print("3: Return coins")
     print("0: Exit")
 
+
 def main() -> None:
     print("Program starting.")
     ca = CoinAcceptor()
@@ -26,7 +27,6 @@ def main() -> None:
         elif(option == 3):
             val = ca.returnCoins()
             print(f"Coin acceptor returned '{val}' coins.")
-
         elif(option == 0):
             break
 
@@ -35,6 +35,7 @@ def main() -> None:
         
     print("\nProgram ending.") #\n creates a new line
     return None
+
 
 if __name__ == "__main__":
     main()

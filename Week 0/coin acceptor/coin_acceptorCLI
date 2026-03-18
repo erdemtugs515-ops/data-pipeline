@@ -1,0 +1,21 @@
+class CoinAcceptor :
+    def __init__(self):
+        self.__amount = 0
+        self.__value = 0.0
+
+    def insertCoin(self, value: float) -> None:
+        self.__amount += 1
+        self.__value += value
+
+    def getAmount(self) -> int:
+        return self.__amount
+    
+    def returnCoins(self) -> tuple[int, float]:
+        coins_returned = self.__amount
+        value_returned = self.__value
+        self.__amount = 0
+        self.__amount = 0.0
+        return coins_returned, value_returned
+    def getValue(self) -> float:
+        return self.__value
+    

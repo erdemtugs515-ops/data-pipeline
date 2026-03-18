@@ -12,7 +12,7 @@ def displayOptions() -> None:
 def main() -> None:
     print("Program starting.")
     ts = TemperatureConverter()
-    
+
     while True:
         displayOptions()
         choice = input("Choice: ")
@@ -31,11 +31,12 @@ def main() -> None:
 
             ts.setTemperature(temp)
         
-        elif(choice == 2): #converts to celcius
+        #stuff below converts temps to celcius, kelvin and fahr depending on choice
+        elif(choice == 2): 
             ts.toCelsius()
-        elif(choice == 3): #converts to fahrenheit
+        elif(choice == 3): 
             ts.toFahrenheit()
-        elif(choice == 4): #converts to kelvin
+        elif(choice == 4): 
             ts.toKelvin()
 
         elif(choice == 0):

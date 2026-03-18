@@ -1,0 +1,4 @@
+type,device_id,location,data,timestamp
+TemperatureSensor,TS-012,Dock Warehouse,23.5°C,1/10/2025  16:00:00 AM
+HumiditySensor,HS-002,Cold-Storage,45%,2/10/2025 8:00
+MotionSensor,MS-001,Rear hallway,Motion Detected,3/10/2025 2:00
