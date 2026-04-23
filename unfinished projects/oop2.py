@@ -1,3 +1,0 @@
-class SodaBottles:
-    bring: str
-    
