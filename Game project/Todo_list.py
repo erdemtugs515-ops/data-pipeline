@@ -6,8 +6,7 @@ from datetime import datetime
 #database
 conn = sqlite3.connect("app.db")
 cursor = conn.cursor()
-cursor.execute("""
-CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT UNIQUE, password TEXT)""")
+cursor.execute("""CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT UNIQUE, password TEXT)""")
 cursor.execute("""CREATE TABLE IF NOT EXISTS tasks (id INTEGER PRIMARY KEY AUTOINCREMENT,user_id INTEGER,title TEXT,description TEXT,priority TEXT,status TEXT,due_date TEXT)""")
 conn.commit()
 
